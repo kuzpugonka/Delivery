@@ -1,20 +1,27 @@
-const modal = document.querySelector(".cart-modal__overlay");      // модалка
-const cartBtn = document.querySelector("#cart-btn");               //кнопка в хэдере
-const closeBtn = modal.querySelector(".cart-modal__header_close");  //крестик в модалке
+const modalControls = () => {
+  const modal = document.querySelector(".cart-modal__overlay");
+  const cartBtn = document.querySelector("#cart-btn");
 
-const openModal = () => {                                          //чтобы открыть модалку
-  modal.classList.add('open')                                      //добавляем класс
-}
+  const openModal = () => {
+    modal.classList.add("open");
+  };
 
+  cartBtn.addEventListener("click", () => {
+    openModal();
+  });
 
-cartBtn.addEventListener("click", () => {                           //при клике на кнопку в хэдере
-  openModal();                                                      //открыть модалку
-});
+  const closeModal = () => {
+    modal.classList.remove("open");
+  };
 
-const closeModal = () => {                                         //чтобы закрыть модалку
-  modal.classList.remove('open');                                  //удалим класс
+  modal.addEventListener("click", (event) => {
+    if (
+      event.target.classList.contains("cart-modal__overlay") ||
+      event.target.closest(".cart-modal__header_close")
+    ) {
+      closeModal();
+    }
+  });
 };
 
-closeBtn.addEventListener("click", () => {                         //при клике на крестик в модалке  
-  closeModal();                                                    //закроем модалку
-});
+modalControls();
