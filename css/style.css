@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto-Regular.eot");
-  src: url("./fonts/Roboto-Regular.eot") format("embedded-opentype"),
-    url("./fonts/Roboto-Regular.woff") format("woff"),
-    url("./fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot") format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto-Bold.eot");
-  src: url("./fonts/Roboto-Bold.eot") format("embedded-opentype"),
-    url("./fonts/Roboto-Bold.woff") format("woff"),
-    url("./fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot") format("embedded-opentype"),
+    url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -102,7 +102,7 @@ body {
 .hero-container {
   padding: 68px;
   border-radius: 10px;
-  background-image: url(./img/hero-img.png);
+  background-image: url(../img/hero-img.png);
   background-color: #fff188;
   background-size: contain;
   background-position: center right;
