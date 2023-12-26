@@ -176,6 +176,7 @@ input.products__header-search::placeholder {
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .products-cart__img {
@@ -314,6 +315,11 @@ input.products__header-search::placeholder {
   color: #595959;
   font-weight: 400;
   font-size: 18px;
+}
+
+.footer__nav a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer__social {
