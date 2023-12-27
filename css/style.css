@@ -258,12 +258,14 @@ input.products__header-search::placeholder {
 /* goods */
 .products-cart__desc_name {
   margin: 0;
+  min-height: 68px;
   color: #000;
   font-size: 24px;
   line-height: 32px; /* 133.333% */
 }
 .products-cart__desc_text {
   margin: 0;
+  min-height: 108px;
   padding: 10px 0 30px;
   color: #8c8c8c;
   font-size: 18px;
